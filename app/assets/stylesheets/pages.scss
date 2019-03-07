@@ -1,0 +1,264 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+  }
+  
+  .header {
+    background: url(http://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/bg.jpg) no-repeat center center;
+    background-size: cover;
+    height: 800px;
+    text-align: center;
+  }
+  
+  .header .container {
+    position: relative;
+    top: 200px;
+  }
+  
+  .header h1 {
+    color: #fff;
+    font-size: 120px;
+    line-height: 100px;
+    margin-top: 0;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+  }
+  
+  @media (max-width: 850px) {
+    .header h1 {
+      font-size: 70px;
+      line-height: 70px;
+    }
+  }
+  
+  .header p {
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 8px;
+    margin-bottom: 40px;
+    margin-top: 0;
+    text-transform: uppercase;
+  }
+  
+  .btn {
+    color: #fff;
+    background: #000;
+    padding: 10px 40px;
+    text-decoration: none;
+    transition: background .5s;
+  }
+  
+  .nav {
+    background: #000;
+    //height: auto;
+    width: 100%;
+  }
+  
+  .nav ul {
+    //height: 80px;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 720px;
+  }
+  
+  .nav ul li {
+    color: #fff;
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+    list-style: none;
+    width: 140px;
+    transition: background .5s;
+  }
+  
+  .btn:hover, .nav ul li:hover {
+    background: #117bff;
+    cursor: pointer;
+    transition: background .5s;
+  }
+
+  .main .row img {
+      width: 100%;
+      height: auto;
+  }
+
+  .main button {
+      background-color: #1178F8;
+      border: none;
+      border-radius: 1em;
+      padding: 1em 2em;
+      align-self: center;
+  }
+
+  .button-holder {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  }
+
+  @media (min-width: 768px){
+    .main .row {
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+  }
+
+  @media (max-width: 767px){
+      .main .row {
+          width: 96vw;
+          margin-left: 2vw;
+          margin-right: 2vw;
+          margin-top: 10px;
+          margin-bottom: 10px;
+      }
+
+      .main .row div {
+          margin-top: 10px;
+          margin-top: 10px;
+      }
+
+      .main .row p {
+        font-size: 12px;
+      }
+  }
+  
+  .jumbotron {
+    background: url(http://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/jumbotron_bg.jpg) center center;
+    background-size: cover;
+    height: 600px;
+  }
+  
+  .jumbotron .container {
+    position: relative;
+    top: 220px;
+  }
+  
+  .jumbotron h2 {
+    color: #fff;
+    text-align: right;
+  }
+  
+  .jumbotron p {
+    color: #fff;
+    text-align: right;
+  }
+  
+  .jumbotron .btn {
+    margin: 10px 0 0;
+    float: right;
+  }
+  
+  .footer {
+    background: #c1c2d2;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer p {
+    color: #fff;
+    font-size: 14px;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+  }
+
+  .footer a {
+    align-self: center;
+  }
+
+  .footer img {
+    margin: auto;
+    padding: 10px;
+    display: block;
+    height: 80px;
+    width: 80px;
+  }
+  
+  .jumbotron form {
+    text-align: right;
+  }
+  
+  .jumbotron input[type=submit] {
+    border: none;
+    margin: 0
+  }
+  
+  .jumbotron input[type=text] {
+    height: 23px;
+    width: 210px;
+    font-size: 14px;
+  }
+  
+  /* Grid */
+  
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  .row {
+    // margin-left: -15px;
+    // margin-right: -15px;
+    width: 100vw;
+  }
+  .clearfix:before,
+  .clearfix:after,
+  .container:before,
+  .container:after,
+  .container-fluid:before,
+  .container-fluid:after,
+  .row:before,
+  .row:after {
+    content: " ";
+    display: table;
+  }
+  .clearfix:after,
+  .container:after,
+  .container-fluid:after,
+  .row:after {
+    clear: both;
+  }
+  
