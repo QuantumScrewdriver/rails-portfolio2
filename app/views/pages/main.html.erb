@@ -1,0 +1,18 @@
+<div id="container">
+    <div id="theTarget" class="slider-container">
+        <div>
+            <img src="https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-507187547455/resources/portfolio-images/BassMusic.png" />
+        </div>
+        <div>
+            <img src="https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-507187547455/resources/portfolio-images/Bookmarks.png" />
+        </div>
+        <div>
+            <img src="https://s3-us-west-2.amazonaws.com/elasticbeanstalk-us-west-2-507187547455/resources/portfolio-images/Threadly.png" />
+        </div>
+    </div>    
+</div>
+
+<% content_for :extra_links do %>
+    <%= javascript_include_tag 'skippr', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+<% end %>
