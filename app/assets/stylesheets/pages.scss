@@ -106,35 +106,6 @@ html, body {
         align-items: center;
         justify-content: center;
   }
-
-  @media (min-width: 768px){
-    .main .row {
-        width: 90vw;
-        margin-left: 5vw;
-        margin-right: 5vw;
-        margin-top: 25px;
-        margin-bottom: 25px;
-    }
-  }
-
-  @media (max-width: 767px){
-      .main .row {
-          width: 96vw;
-          margin-left: 2vw;
-          margin-right: 2vw;
-          margin-top: 10px;
-          margin-bottom: 10px;
-      }
-
-      .main .row div {
-          margin-top: 10px;
-          margin-top: 10px;
-      }
-
-      .main .row p {
-        font-size: 12px;
-      }
-  }
   
   .jumbotron {
     background: url(http://s3.amazonaws.com/codecademy-content/projects/innovation-cloud/jumbotron_bg.jpg) center center;
