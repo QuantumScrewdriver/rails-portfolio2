@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root 'pages#welcome'
   get 'pages/main' => 'pages#main'
   get 'about' => 'about#about'
+  get 'contact' => 'contact#contact'
 end

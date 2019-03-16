@@ -1,0 +1,30 @@
+// Place all the styles related to the Contact controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.contact{
+    height: 20vh;
+    background-color: #1178F8;
+    font-size: 24px;
+    border-style: solid;
+    border-color: #1178F8;
+    border-radius: 5px;
+    border-width: 5px;
+    text-align: center;
+    line-height: 20vh;
+    display: inline-block;
+    vertical-align: middle;
+    transition: background .5s;
+}
+
+.contact:hover {
+    background: white;
+    cursor: pointer;
+    color: white !important;
+    transition: background .5s;
+}
+
+.logo-img {
+    height: 20vh;
+    width: auto;
+}
